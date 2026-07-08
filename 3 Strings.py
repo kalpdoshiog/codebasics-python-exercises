@@ -13,3 +13,7 @@ print(text[4:]) # It will go till end
 print(text[:9]) # It will start from zero and go till 8 as (9-1) = 8
 
 # Strings can define by both "" and ''
+
+text = "Let's go eat"
+
+text = 'Let\'s go eat' # Both works
