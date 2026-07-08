@@ -74,3 +74,6 @@ address_2 = f"{street}{city}{country}"
 print(address)
 print(address_2)
 
+Fact = "Earth revolves around the sun"
+print(Fact[6:15])
+print(Fact[-3:])
