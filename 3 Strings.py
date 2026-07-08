@@ -17,3 +17,9 @@ print(text[:9]) # It will start from zero and go till 8 as (9-1) = 8
 text = "Let's go eat"
 
 text = 'Let\'s go eat' # Both works
+
+text = 'Hello "World!"' # This also works
+
+address = '''2 Purple Street,
+New York, 
+USA'''  # THis is multi line string.
