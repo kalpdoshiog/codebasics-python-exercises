@@ -1,3 +1,4 @@
+
 text = "Ice Cream"
 
 print(text)
@@ -77,3 +78,13 @@ print(address_2)
 Fact = "Earth revolves around the sun"
 print(Fact[6:15])
 print(Fact[-3:])
+
+fruits = "3"
+
+vegetables = "5"
+
+print(f"I eat {fruits} Fruits and {vegetables} Vegetables a every day")
+
+s = "maine 200 banana khaye".replace("200", "10").replace("banana", "samosa")
+print(s)
+
