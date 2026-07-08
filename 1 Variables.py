@@ -29,23 +29,23 @@ print("Expense items:", item1, item2, item3)
 
 # Kalp Doshi's Solution
 
-# break = 5 # SyntaxError: invalid syntax, Because it is a Keyword.
-# birth_year = 2004
-# current_year = 2026
-#
-# age = current_year - birth_year
-# print(age)
+break = 5 # SyntaxError: invalid syntax, Because it is a Keyword.
+birth_year = 2004
+current_year = 2026
 
-# first_name = "Kalp"
-# middle_name = "Nishitkumar"
-# lastname = "Doshi"
-#
-# print("My full name is", first_name, middle_name, lastname)
+age = current_year - birth_year
+print(age)
 
-# _nation = 1 #Valid
-# 1record = 1 # Invalid
-# record1 = 1 #Valid
-# record_one = 1 #Valid
-# record-one = 1 # Invalid
-# record^one = 1 #Invalid
-# continue = 1 #Invalid
+first_name = "Kalp"
+middle_name = "Nishitkumar"
+lastname = "Doshi"
+
+print("My full name is", first_name, middle_name, lastname)
+
+_nation = 1 #Valid
+1record = 1 # Invalid
+record1 = 1 #Valid
+record_one = 1 #Valid
+record-one = 1 # Invalid
+record^one = 1 #Invalid
+continue = 1 #Invalid
