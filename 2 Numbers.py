@@ -90,4 +90,4 @@ number = 17
 
 binary_num = f"{number:b}" #Used google for this as video does not taught this.
 
-print(binary_num) 
+print(binary_num)
