@@ -64,6 +64,12 @@ print(states_in_usa + str(number))
 #
 # [Solution](https://github.com/codebasics/py/blob/master/Basics/Exercise/4_strings/4_string_exercise_answer.py)
 
-street = ""
-city = ""
-country = ""
+street = "6 7 Purple Street"
+city = "Six Seven"
+country = "Canada"
+
+address = street + " " + city + " " + country
+address_2 = f"{street} {city} {country}"
+
+print(address)
+print(address_2)
