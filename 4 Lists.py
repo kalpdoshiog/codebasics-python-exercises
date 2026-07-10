@@ -71,9 +71,31 @@
 
 
 # Kalp Doshi Solution
-months = ["January", "February", "March", "April", "May", ]
-expense = [2200, 2350, 2600, 2130, 2190, ]
+# months = ["January", "February", "March", "April", "May", ]
+# expense = [2200, 2350, 2600, 2130, 2190, ]
+#
+# print(f"I spent ${expense[1] - expense[0]} extra in February than January ")
+# print(f"My total expense of first quarter is ${sum(expense[0:3])}")
+# print(2000 in expense)
+# months.append("June")
+# expense.append(1980)
+# expense[3] = 1930
+#
+# print(months, expense)
 
-print(f"I spent ${expense[1] - expense[0]} extra in February than January ")
-print(f"My total expense of first quarter is ${sum(expense[0:3])}")
+heros=['spider man','thor','hulk','iron man','captain america']
+print(len(heros))
+heros.append("black panther")
+print(heros)
+heros.remove("black panther")
+print(heros)
 
+heros.insert(3, "black panther")
+print(heros)
+
+heros[1:3] = ["doctor strange"]
+print(heros)
+
+print(dir(list))
+
+print(sorted(heros))
