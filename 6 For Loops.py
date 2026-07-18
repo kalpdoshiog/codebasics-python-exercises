@@ -21,12 +21,17 @@
 #     total += expense[item]
 # print(f"Total expense is : {total}")
 
-key_location = "chair"
-locations = ["garage", "living room", "kitchen", "chair", "bedroom", "bath room"]
+# key_location = "chair"
+# locations = ["garage", "living room", "kitchen", "chair", "bedroom", "bath room"]
+#
+# for key in locations:
+#     if key==key_location:
+#         print(f"Key is found : {key}")
+#         break
+#     else:
+#         print(f"Key is not found : {key}")
 
-for key in locations:
-    if key==key_location:
-        print(f"Key is found : {key}")
-        break
-    else:
-        print(f"Key is not found : {key}")
+for i in range(1,6):
+    if i%2==0:
+        continue
+    print(i*i)
