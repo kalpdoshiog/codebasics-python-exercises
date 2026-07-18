@@ -31,7 +31,11 @@
 #     else:
 #         print(f"Key is not found : {key}")
 
-for i in range(1,6):
-    if i%2==0:
-        continue
-    print(i*i)
+# for i in range(1,6):
+#     if i%2==0:
+#         continue
+#     print(i*i)
+i = 1
+while i<=5:
+    print(i)
+    i += 1
