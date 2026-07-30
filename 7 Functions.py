@@ -1,4 +1,6 @@
 # Without using function
+from operator import length_hint
+
 
 # tom_expense_list = [580, 305, 240, 710]
 # joe_expense_list = [320, 670, 180, 760]
@@ -88,9 +90,43 @@
 
 # Kalp Doshi's Solution
 
-def calulate_area(base, height):
-    area = (1/2) * base * height
-    return area
+# def calculate_area(base, height):
+#     area = (1/2) * base * height
+#     return area
+#
+# area_of_a_triangle = calculate_area(5, 10)
+# print(area_of_a_triangle)
 
-area_of_a_triangle = calulate_area(5, 10)
-print(area_of_a_triangle)
+# def calculate_area(dimension1, dimension2, shape_type="triangle"):
+#     if shape_type == "triangle":
+#         area = (1/2) * dimension1 * dimension2
+#     elif shape_type == "rectangle":
+#         area = dimension1 * dimension2
+#     else:
+#         print("You entered wrong shape type, please enter correct one : Triangle or Rectangle")
+#         area = None
+#     return area
+#
+# base = 10
+# height = 20
+#
+# triangle_area = calculate_area(base, height, "triangle")
+# print("Area of triangle is:",triangle_area)
+#
+# length=20
+# width=30
+# rectangle_area=calculate_area(length,width,"rectangle")
+# print("Area of rectangle is:",rectangle_area)
+#
+# triangle_area=calculate_area(base,height)
+# print("Area of triangle with no shape supplied: ",triangle_area)
+
+def print_pattern(number):
+    stars = ""
+    for i in range(0, number):
+        stars += "*"
+        print(stars)
+
+num = int(input("Please enter number: "))
+
+print_pattern(num)
