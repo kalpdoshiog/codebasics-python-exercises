@@ -36,7 +36,12 @@
 # print(f"Joe's total expense is : {joe_expense}")
 
 
-def sum(a, b):
+def sum(a, b=0):
+    """
+    :param a:
+    :param b:
+    :return:
+    """
     print(f"A : {a}")
     print(f"B : {b}")
     total = a + b
@@ -45,6 +50,8 @@ def sum(a, b):
 
 number = sum(5,6)
 number_2 = sum(b=5, a=6)
+number_3 = sum(5)
 
 print(f"Total outside function : {number}")
 print(f"Total  outside function : {number_2}")
+print(f"Total outside function : {number_3}")
