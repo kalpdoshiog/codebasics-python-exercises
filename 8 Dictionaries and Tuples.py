@@ -31,6 +31,7 @@
 # print(tuple_point)
 # print(tuple_point[0])
 # print(tuple_point[1])
+from sys import set_coroutine_origin_tracking_depth
 
 # tuple_point[0] = 1 We can not change values in tuples.
 
@@ -107,34 +108,52 @@ Write a function `circle_calc()` that:
 Call the function in the main program and print the returned values.
 """
 
-country_population = {"China":143,
-                      "India": 134,
-                      "Usa": 32,
-                      "Pakistan": 21}
+# country_population = {"China":143,
+#                       "India": 134,
+#                       "Usa": 32,
+#                       "Pakistan": 21}
+#
+# enter_operation = input("Please enter add, remove, or query : ").lower()
+#
+#
+# if enter_operation == "add":
+#     ask_country_name = input("Please enter country name : ").capitalize()
+#     if ask_country_name in country_population:
+#         print(f"This country ({ask_country_name}) data  already exits : {country_population[ask_country_name]}")
+#     else:
+#         aks_for_population = int(input("Please enter Population details : "))
+#         country_population[ask_country_name] = aks_for_population
+#         print(country_population)
+#
+# elif enter_operation == "remove":
+#     ask_country_name = input("Please enter country name : ").capitalize()
+#     if ask_country_name in country_population:
+#         del country_population[ask_country_name]
+#         print(country_population)
+#     else:
+#         print("Country does not exist")
+# elif enter_operation == "query":
+#     ask_country_name = input("Please enter country name : ").capitalize()
+#     print(f"{ask_country_name} : {country_population[ask_country_name]}")
 
-enter_operation = input("Please enter add, remove, or query : ").lower()
+stock_prices = {"info" : [600, 630, 620], "ril" : [1430, 1490, 1567], "mtl" : [234, 180, 160]}
+
+enter_operation_2 = input("Please enter which operation to perform: 'print' or 'add'? ").lower()
+
+if enter_operation_2 == "print":
+    for key in stock_prices:
+        print(f"{key} ==> {stock_prices[key]} ==> {round(sum(stock_prices[key])/len(stock_prices[key]),2)}")
 
 
-if enter_operation == "add":
-    ask_country_name = input("Please enter country name : ").capitalize()
-    if ask_country_name in country_population:
-        print(f"This country ({ask_country_name}) data  already exits : {country_population[ask_country_name]}")
+elif enter_operation_2 == "add":
+    enter_stock_ticker = input("Please enter Stock Ticker : ").lower()
+    enter_stock_ticker_price = int(input("Please enter Stock Ticker Price : "))
+    if enter_stock_ticker in stock_prices:
+        stock_prices[enter_stock_ticker].append(enter_stock_ticker_price)
+        print(stock_prices)
+
     else:
-        aks_for_population = int(input("Please enter Population details : "))
-        country_population[ask_country_name] = aks_for_population
-        print(country_population)
-
-elif enter_operation == "remove":
-    ask_country_name = input("Please enter country name : ").capitalize()
-    if ask_country_name in country_population:
-        del country_population[ask_country_name]
-        print(country_population)
-    else:
-        print("Country does not exist")
-elif enter_operation == "query":
-    ask_country_name = input("Please enter country name : ").capitalize()
-    print(f"{ask_country_name} : {country_population[ask_country_name]}")
-
-
+        stock_prices[enter_stock_ticker] = [enter_stock_ticker_price]
+        print(stock_prices)
 
 
