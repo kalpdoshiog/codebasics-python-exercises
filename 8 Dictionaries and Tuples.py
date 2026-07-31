@@ -3,3 +3,5 @@ dic = {"tom" : 123456789,
        "bon" : 1234567890,
        }
 print(dic)
+
+print(dic["tom"])
