@@ -136,24 +136,38 @@ Call the function in the main program and print the returned values.
 #     ask_country_name = input("Please enter country name : ").capitalize()
 #     print(f"{ask_country_name} : {country_population[ask_country_name]}")
 
-stock_prices = {"info" : [600, 630, 620], "ril" : [1430, 1490, 1567], "mtl" : [234, 180, 160]}
+# stock_prices = {"info" : [600, 630, 620], "ril" : [1430, 1490, 1567], "mtl" : [234, 180, 160]}
+#
+# enter_operation_2 = input("Please enter which operation to perform: 'print' or 'add'? ").lower()
+#
+# if enter_operation_2 == "print":
+#     for key in stock_prices:
+#         print(f"{key} ==> {stock_prices[key]} ==> {round(sum(stock_prices[key])/len(stock_prices[key]),2)}")
+#
+#
+# elif enter_operation_2 == "add":
+#     enter_stock_ticker = input("Please enter Stock Ticker : ").lower()
+#     enter_stock_ticker_price = int(input("Please enter Stock Ticker Price : "))
+#     if enter_stock_ticker in stock_prices:
+#         stock_prices[enter_stock_ticker].append(enter_stock_ticker_price)
+#         print(stock_prices)
+#
+#     else:
+#         stock_prices[enter_stock_ticker] = [enter_stock_ticker_price]
+#         print(stock_prices)
 
-enter_operation_2 = input("Please enter which operation to perform: 'print' or 'add'? ").lower()
 
-if enter_operation_2 == "print":
-    for key in stock_prices:
-        print(f"{key} ==> {stock_prices[key]} ==> {round(sum(stock_prices[key])/len(stock_prices[key]),2)}")
+def circle_calc(radius):
+    diameter = radius * 2
+    area = 3.14 * radius ** 2
+    circumference = 2 * 3.14 * radius
+    return area, diameter, circumference
 
+input_radius = int(input("Please enter Radius : "))
 
-elif enter_operation_2 == "add":
-    enter_stock_ticker = input("Please enter Stock Ticker : ").lower()
-    enter_stock_ticker_price = int(input("Please enter Stock Ticker Price : "))
-    if enter_stock_ticker in stock_prices:
-        stock_prices[enter_stock_ticker].append(enter_stock_ticker_price)
-        print(stock_prices)
+area, diameter, circumference = circle_calc(input_radius)
 
-    else:
-        stock_prices[enter_stock_ticker] = [enter_stock_ticker_price]
-        print(stock_prices)
-
+print(area)
+print(diameter)
+print(circumference)
 
