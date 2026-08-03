@@ -1,1 +1,2 @@
-I Love Python
+I Love JavaScript
+I Love C++
