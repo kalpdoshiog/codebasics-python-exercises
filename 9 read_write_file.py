@@ -6,5 +6,14 @@
 # file.close()
 
 file = open("C:\\Users\\kalpd\\PycharmProjects\\codebasics-python-exercises\\9_read_write_file\\hello.txt","r")
-print(file.read())
+file_out = open("C:\\Users\\kalpd\\PycharmProjects\\codebasics-python-exercises\\9_read_write_file\\hello_word_count.txt","w")
+# print(file.read())
+# file.close()
+
+for line in file:
+    token = line.split(" ")
+    # print(str(token))
+    file_out.write("Wordcount : "+ str(len(token)) + ",  " + line )
+    # print(line)
+
 file.close()
