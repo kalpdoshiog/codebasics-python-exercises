@@ -54,3 +54,22 @@
 #
 # [Solution](https://github.com/codebasics/py/blob/master/Basics/Exercise/13_read_write_files/exercise_2_stocks.py)
 
+poem_file = open("C:\\Users\\kalpd\\PycharmProjects\\codebasics-python-exercises\\9_Read_Write_File\\poem.txt", "r")
+
+# print(poem_file.read())
+max_count = 0
+max_word = ""
+count = {}
+for line in poem_file:
+    words = line.split()
+    for word in words:
+        if word not in count:
+            count[word] = 1
+        else:
+            count[word] += 1
+        if count[word] > max_count:
+            max_count = count[word]
+            max_word = word
+# print(count)
+print(f"Max Word is: {max_word} and count is: {max_count}")
+poem_file.close()
