@@ -1,0 +1,2 @@
+Wordcount : 3, I Love JavaScript
+Wordcount : 3, I Love C++
