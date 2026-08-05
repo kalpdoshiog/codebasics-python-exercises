@@ -1,17 +1,17 @@
-x = input("Enter Number 1: ")
-y = input("Enter Number 2: ")
-
-try:
-    z = x/ int(y)
-except ZeroDivisionError:
-    print("Division by Zero Exception")
-    z = None
-except TypeError as e:
-    # print("Which Type of Exception? ", type(e).__name__)
-    print("You forgot to convert str to int")
-    z = None
-
-print("Division is: ",z)
+# x = input("Enter Number 1: ")
+# y = input("Enter Number 2: ")
+#
+# try:
+#     z = x/ int(y)
+# except ZeroDivisionError:
+#     print("Division by Zero Exception")
+#     z = None
+# except TypeError as e:
+#     # print("Which Type of Exception? ", type(e).__name__)
+#     print("You forgot to convert str to int")
+#     z = None
+#
+# print("Division is: ",z)
 
 ## Exercise: Python Exception Handling
 
@@ -41,5 +41,24 @@ print("Division is: ",z)
 
 try:
     grade = int(input("Please Enter number: "))
-except ValueError:
-    print("You entered non-numeric value, please enter numeric value.")
+
+    if grade < 0 or grade > 100:
+        raise ValueError("You entered an outside range number")
+
+except ValueError as e:
+    print(e)
+
+else:
+    if grade >= 90:
+        print("You got 'A' Grade!")
+    elif grade >= 80:
+        print("You got 'B' Grade!")
+    elif grade >= 70:
+        print("You got 'C' Grade!")
+    elif grade >= 60:
+        print("You got 'D' Grade!")
+    else:
+        print("You are Fail, You got F Grade!")
+
+finally:
+    print("Thank you for using the Grade Calculator. Goodbye!")
